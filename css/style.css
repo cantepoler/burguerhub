@@ -1,0 +1,52 @@
+header {
+    position: sticky;
+    height: 85px;
+    background-color: #f4faff;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    padding: 0 40px;
+    align-items: center;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+    font-size: 20px;
+
+}
+
+.static, .interactive{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+.static {
+    gap: 10px;
+}
+
+
+.cart a,
+.login {
+    display: flex;
+    align-items: center;
+    gap: 6px;   /* espai entre icona i text */
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.cart, .login {
+    transition: transform 0.2s;
+}
+
+.cart:hover,
+.login:hover {
+    transform: scale(1.15);
+}
