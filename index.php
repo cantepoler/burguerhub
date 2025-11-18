@@ -1,37 +1,20 @@
-<!DOCTYPE html>
+<?php
+// El recurs al que accedirem ens ho dirà la variable accio.
+$accio = $_GET['accio'] ?? NULL;
 
-<html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="/css/style.css">
-    <title>BurguerHub</title>
-</head>
-<body>
-    <header>
-        <div class="static">
-            <div class="logo">
-                <img src="/img/ham.webp" alt="Logo de BurguerHub" width="30px">
-            </div>
-            <div class="nav">
-                The Burguer House
-            </div>
-        </div>
+switch ($accio) {
+    case 'llistar-categories':
+        include __DIR__."/recurs_llistat_categories.php";
+        break;
+    case 'llistar-productes':
+        include __DIR__."/recurs_llistat_productes.php";
+        break;
+    default:
+        include __DIR__."/recurs_llistat_categories.php";
+        break;
 
-        <div class="interactive">
-            <div class="cart">
-                <a href="#"> <!-- acabar -->
-                    <img src="/img/carro.png" alt="Carro de la compra" width="20px">
-                    <span>Cabàs</span>
-                </a> 
-                    
-            </div>
-            <div class="login">
-                <img src="/img/person.svg" alt="Icona d'usuari" width="15px">
-                <span>Login</span>
-            </div>
-        </div>
-    </header>
-</body>
-</html>
+    // Per a cada recurs diferent, hi haura un case. 
+    // Hi haurà recursos pel menu d'usuari, per inciar sessió, etc.
+}
+
+?>
