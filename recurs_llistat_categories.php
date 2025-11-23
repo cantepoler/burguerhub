@@ -9,8 +9,7 @@
     <body>
         <?php
         include_once __DIR__.'/controladors/header.php';
-        
-        include __DIR__.'/controladors/llistar_categories.php';
-        ?>
+        ?>        
+        <?php include __DIR__.'/controladors/llistar_categories.php'; ?>        
     </body>
 </html>
