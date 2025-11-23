@@ -1,3 +1,4 @@
+
 header {
     position: sticky;
     height: 85px;
@@ -42,6 +43,7 @@ header {
     font-weight: 500;
 }
 
+/* EXCESSIU
 .cart, .login {
     transition: transform 0.2s;
 }
@@ -50,6 +52,7 @@ header {
 .login:hover {
     transform: scale(1.15);
 }
+*/
 
 .categories {
     padding: 20px 40px;
@@ -59,7 +62,7 @@ header {
     justify-items: center;
 }
 
-.carta_categories {
+.caixa {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,19 +79,19 @@ header {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.carta_categories img {
+.caixa img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 5px;
 }
 
-.carta_categories:hover {
+.caixa:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.carta_categories h2 {
+.caixa h2 {
     margin: 10px 0 5px 0;
     font-size: 18px;
     color: #333;
@@ -107,3 +110,5 @@ header {
     }
     
 }
+
+

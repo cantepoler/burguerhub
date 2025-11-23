@@ -1,8 +1,7 @@
 <div class="categories">
 <?php foreach ($categories as $categoria) { //Millorar les direccions a les imatges?>
-    <div class="carta_categories">
-        <a href="#">
-
+    <div class="caixa">
+        <a href="/index.php?accio=llistar-productes&categoria_id=<?=$categoria['id']?>">
         <img src="../../<?php echo $categoria['imatge']?>" alt="<?php echo $categoria['nom'] ?>"> 
         <div class="information">
             <h2><?php echo $categoria['nom'] ?></h2>
