@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+    color: inherit;   /* opcional: fa que agafi el color del text pare */
+}
 
 header {
     position: sticky;
@@ -82,7 +86,7 @@ header {
 .caixa img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 5px;
 }
 
@@ -107,6 +111,9 @@ header {
 @media screen and (max-width: 750px) {
     .categories {
         grid-template-columns: 1fr;
+    }
+    .interactive span{
+        display: none;
     }
     
 }

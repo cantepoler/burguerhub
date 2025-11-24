@@ -9,7 +9,10 @@ switch ($accio) {
     case 'llistar-productes':
         include __DIR__."/recurs_llistat_productes.php";
         break;
-    default:
+    case 'detall-producte' :
+        include __DIR__."/recurs_detall_producte.php";
+        break;
+    default:    
         include __DIR__."/recurs_llistat_categories.php";
         break;
 
