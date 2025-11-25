@@ -1,4 +1,6 @@
 <?php
+define("BASE_URL", "https://tdiw-g5.deic-docencia.uab.cat");
+
 // El recurs al que accedirem ens ho dirà la variable accio.
 $accio = $_GET['accio'] ?? NULL;
 
@@ -19,5 +21,4 @@ switch ($accio) {
     // Per a cada recurs diferent, hi haura un case. 
     // Hi haurà recursos pel menu d'usuari, per inciar sessió, etc.
 }
-
 ?>
